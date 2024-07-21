@@ -22,6 +22,7 @@ app.use("/", express.static(path.join(__dirname, '/public')));
 
 // All routes
 app.use("/", require("./routes/root.js"))
+app.use("/exam", require("./routes/examRoutes.js"));
 
 // If not route is set, ERROR 404 NOT FOUND
 app.all("*", (req, res) => {
