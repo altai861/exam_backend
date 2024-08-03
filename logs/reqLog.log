@@ -23,3 +23,7 @@
 20240721	11:41:31	bd61b098-25b6-447c-8f66-ab6489187621	PUT	/exam/669c823fb1eb54c2f77fed99	undefined
 20240721	11:43:16	6cd000e4-d58c-42db-9eb5-7e5f2a47564f	DELETE	/exam/669c823fb1eb54c2f77fed99	undefined
 20240721	11:43:32	2b7ea0e3-407b-4bab-b0df-8ed8d44c81cb	GET	/exam/	undefined
+20240803	15:48:06	daddbccb-ba1d-46b7-8213-395955ecb9a8	GET	/auth/login	undefined
+20240803	15:48:07	bb673dfc-9fae-4965-a84d-9350c67522d2	GET	/favicon.ico	undefined
+20240803	15:48:15	7f8164f0-9c84-4afc-a28c-87cb5014b455	GET	/	undefined
+20240803	15:48:15	003bd07b-856a-4d29-bd4f-1108aa6c5b42	GET	/favicon.ico	undefined
