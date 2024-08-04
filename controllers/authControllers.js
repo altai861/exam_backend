@@ -58,7 +58,26 @@ const register = async (req, res) => {
 
 }
 
+const check = async (req, res) => {
+    const { accessToken } = req.body;
+    if (!accessToken) {
+        return res.status(400).json({ message: "Access token is not present" });
+    }
+
+    jwt.verify(
+        accessToken,
+        process.env.ACCESS_TOKEN_SECRET,
+        (err, decoded) => {
+            if (err) {
+                return res.status(403).json({ message: "Invalid access token" });
+            }
+            return res.status(200).json({ message: decoded.UserInfo.userId })
+        }
+    )
+}
+
 module.exports = {
     login,
-    register
+    register,
+    check
 }
